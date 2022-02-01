@@ -1,0 +1,7 @@
+django
+django-extensions
+django-lifecycle
+markdown
+pymdown-extensions
+gunicorn
+django-on-heroku

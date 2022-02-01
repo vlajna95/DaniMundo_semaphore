@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load markdown_extras %}
+
+{% block title %}{{ article.title }} | {{ block.super }}{% endblock title %}
+
+{% block content %}
+<article>
+<header>
+<h1 class="title">{{ article.title }}</h1>
+<p>{% translate "Created on" %} {{ article.date_created }}</p>
+<p>{% translate "Author(s):" %} {% for a in article.author.all %}<a href="{{ a.get_absolute_url }}">{{ a }}</a> {% endfor %}</p>
+</header>
+<p class="summary">{{ article.summary }}</p>
+{{ article.body|markdown|safe }}
+<p>{% translate "Last update" %}: {{ article.date_updated }}</p>
+</article>
+{% endblock content %}

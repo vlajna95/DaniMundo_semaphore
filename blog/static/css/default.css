@@ -1,0 +1,65 @@
+:root {
+background: black;
+color: green;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 12px;
+}
+body {
+width: 100%;
+height: 100%;
+}
+ul {
+list-style: none;
+}
+a {
+color: white;
+text-decoration: none;
+}
+nav {
+width: 30%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+border: 5px outset #100040;
+padding: 5px;
+background: #180080;
+}
+nav a {
+display: block;
+}
+nav a:hover, nav a:focus {
+background: #400088;
+font-size: 125%;
+}
+main {
+margin-left: 30%;
+padding: 0 10px;
+}
+main ul li::before {
+content: "- ";
+}
+
+.highlight {
+border: 3px inset green;
+}
+.highlight button {
+color: #adb5bd;
+box-sizing: border-box;
+transition: 0.2s ease-out;
+cursor: pointer;
+user-select: none;
+background: rgba(0, 0, 0, 0.15);
+border: 1px solid rgba(0, 0, 0, 0);
+padding: 5px 10px;
+font-size: 0.8em;
+position: absolute;
+top: 0;
+right: 0;
+border-radius: 0 0.15rem;
+}
+span.filename {
+background: #123;
+color: LightSeaGreen;
+}

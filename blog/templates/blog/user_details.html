@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ user }} (@{{ user.username }}) | {{ block.super }}{% endblock title %}
+
+{% block content %}
+<section>
+<header>
+<h1 class="title">{{ user }}</h1>
+<p>@{{ user.username }}</p>
+</header>
+<section>
+<header>
+<h2>{% blocktranslate %}Articles written by {{ user }}{% endblocktranslate %}</h2>
+</header>
+{% for article in user.articles.all %}
+<article>
+<header>
+<h3><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h3>
+<small>{{ article.date_created }}</small>
+</header>
+<p class="summary">{{ article.summary }}</p>
+</article>
+{% endfor %}
+</section>
+</section>
+{% endblock content %}

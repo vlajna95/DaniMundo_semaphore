@@ -1,0 +1,27 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %}DaniMundo{% endblock title %}</title>
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<aside>
+<nav>
+<ul>
+<li><a href="{% url 'home' %}">{% translate "Home" %}</a></li>
+<li><a href="{% url 'article_list' %}">{% translate "Blog" %}</a></li>
+</ul>
+</nav>
+</aside>
+<main>
+{% block content %}
+
+{% endblock content %}
+</main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load markdown_extras %}
+
+{% block title %}{% translate "Home" %} | {{ block.super }}{% endblock title %}
+
+{% block content %}
+{% translate "Welcome!" %}
+{% autoescape off %}
+{% filter markdown %}
+Hey, nice to see you! :grinning:
+{% endfilter %}
+{% endautoescape %}
+{% endblock content %}
