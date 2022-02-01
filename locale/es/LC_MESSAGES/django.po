@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-01 11:15+0100\n"
-"PO-Revision-Date: 2022-02-01 10:39+0100\n"
+"PO-Revision-Date: 2022-02-01 14:07+0100\n"
 "Last-Translator: Danijela Popović <dani@danimundo.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -21,26 +21,20 @@ msgstr ""
 msgid "Blog"
 msgstr "Blog"
 
-#, fuzzy
-#| msgid "First name"
 msgid "first name"
-msgstr "Nombre"
+msgstr "nombre"
 
-#, fuzzy
-#| msgid "Last name"
 msgid "last name"
-msgstr "Apellido(s)"
+msgstr "apellido(s)"
 
 msgid "username"
-msgstr "Nombre de usuario"
+msgstr "nombre de usuario"
 
-#, fuzzy
-#| msgid "Email"
 msgid "email"
-msgstr "Correo electrónico"
+msgstr "correo electrónico"
 
 msgid "slug"
-msgstr ""
+msgstr "ruta"
 
 msgid "user"
 msgstr "usuario"
@@ -57,44 +51,32 @@ msgstr "privado"
 msgid "draft"
 msgstr "borrador"
 
-#, fuzzy
-#| msgid "Title"
 msgid "title"
-msgstr "Título"
+msgstr "título"
 
-#, fuzzy
-#| msgid "Summary"
 msgid "summary"
-msgstr "Resumen"
+msgstr "resumen"
 
 msgid "The summary of the article (max. 500 characters)"
 msgstr "Resumen del artículo (máx. 500 carácteres)"
 
 msgid "body"
-msgstr ""
+msgstr "cuerpo"
 
 msgid "The body/contents of the article"
 msgstr "El cuerpo/contenido del artículo"
 
-#, fuzzy
-#| msgid "Author(s)"
 msgid "author(s)"
-msgstr "Autor(es)"
+msgstr "autor(es)"
 
-#, fuzzy
-#| msgid "Article publication status"
 msgid "article publication status"
-msgstr "Estado de publicación"
+msgstr "estado de publicación"
 
-#, fuzzy
-#| msgid "Date created"
 msgid "date created"
-msgstr "Fecha de creación"
+msgstr "fecha de creación"
 
-#, fuzzy
-#| msgid "Date updated"
 msgid "date updated"
-msgstr "Fecha de la última actualización"
+msgstr "fecha de la última actualización"
 
 msgid "article"
 msgstr "artículo"
