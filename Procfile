@@ -1,1 +1,1 @@
-web: gunicorn danimundo.wsgi
+web: gunicorn DaniMundo.wsgi
