@@ -4,4 +4,5 @@ django-lifecycle
 markdown
 pymdown-extensions
 gunicorn
+django-environ
 django-on-heroku
