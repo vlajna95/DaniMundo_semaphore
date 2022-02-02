@@ -8,11 +8,11 @@
 <article>
 <header>
 <h2 class="title"><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h2>
-<p>{% translate "Created on" %} {{ article.date_created }}</p>
-<p>{% translate "Author(s):" %} {% for a in article.author.all %}<a href="{{ a.get_absolute_url }}">{{ a }}</a> {% endfor %}</p>
+<p>{% translate "Date of publication:" %} {{ article.date_created }}</p>
+<p>{% include "blog/article_authors.html" %}</p>
 </header>
 {{ article.summary }}
 </article>
-{% if forloop.index != loop.last %}<hr />{% endif %}
+{% if not forloop.last %}<br />{% endif %}
 {% endfor %}
 {% endblock content %}

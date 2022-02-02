@@ -46,6 +46,7 @@ class Article(models.Model, ModelHelper): #, LifeCycleModelMixin):
 	slug = models.SlugField(unique=True, verbose_name=_("slug"))
 
 	class Meta:
+		ordering = ["-date_created"]
 		verbose_name = _("article")
 		verbose_name_plural = _("articles")
 
