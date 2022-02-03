@@ -1,2 +1,2 @@
-web: gunicorn DaniMundo.wsgi
-release: python manage.py migrate
+web: gunicorn DaniMundo.DaniMundo.wsgi
+release: python DaniMundo/manage.py migrate
