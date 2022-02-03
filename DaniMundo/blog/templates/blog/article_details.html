@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load markdown_extras %}
+
+{% block title %}{{ article.title }} | {{ block.super }}{% endblock title %}
+
+{% block content %}
+<article>
+<header>
+<h1 class="title">{{ article.title }}</h1>
+<p>{% translate "Date of publication:" %} {{ article.date_created }}</p>
+<p>{% include "blog/article_authors.html" %}</p>
+</header>
+<p class="summary">{{ article.summary }}</p>
+{{ article.body|markdown|safe }}
+{% if article.date_updated != article.date_created %}<p>{% translate "Last update:" %} {{ article.date_updated }}</p>{% endif %}<hr />
+<div class="comments">
+{% include "blog/comments.html" with article_path=article.get_absolute_url article_slug=article|full_slug %}
+</div>
+</article>
+{% endblock content %}

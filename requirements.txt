@@ -1,0 +1,11 @@
+django
+django-extensions
+django-lifecycle
+django-modeltranslation
+markdown
+pymdown-extensions
+pygments
+git+https://github.com/vlajna95/markdown-customblocks
+gunicorn
+django-environ
+django-on-heroku

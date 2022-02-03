@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% translate "Blog" %} | {{ block.super }}{% endblock title %}
+
+{% block content %}
+{% for article in object_list %}
+<article>
+<header>
+<h2 class="title"><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h2>
+<p>{% translate "Date of publication:" %} {{ article.date_created }}</p>
+<p>{% include "blog/article_authors.html" %}</p>
+</header>
+{{ article.summary }}
+</article>
+{% if not forloop.last %}<br />{% endif %}
+{% endfor %}
+{% endblock content %}

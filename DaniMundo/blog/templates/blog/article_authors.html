@@ -1,0 +1,2 @@
+{% load i18n %}
+{% blocktranslate count authors=article.author.all|length %}Author:{% plural %}Authors:{% endblocktranslate %} {% for a in article.author.all %}<a href="{{ a.get_absolute_url }}">{{ a }}</a>{% if not forloop.last %}, {% endif %}{% empty %}No authors{% endfor %}

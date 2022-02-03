@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaniMundo v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-02 09:51+0100\n"
+"PO-Revision-Date: 2022-02-02 09:54+0100\n"
+"Last-Translator: Danijela Popović <dani@danimundo.com>\n"
+"Language-Team: sr <LL@li.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#: .\apps.py .\templates\blog\article_list.html
+msgid "Blog"
+msgstr "Блог"
+
+#: .\models.py
+msgid "first name"
+msgstr "име"
+
+#: .\models.py
+msgid "last name"
+msgstr "презиме"
+
+#: .\models.py
+msgid "username"
+msgstr "корисничко име"
+
+#: .\models.py
+msgid "email"
+msgstr "мејл"
+
+#: .\models.py
+msgid "slug"
+msgstr "путања"
+
+#: .\models.py
+msgid "user"
+msgstr "корисник"
+
+#: .\models.py
+msgid "users"
+msgstr "корисници"
+
+#: .\models.py
+msgid "public"
+msgstr "објављено"
+
+#: .\models.py
+msgid "private"
+msgstr "приватно"
+
+#: .\models.py
+msgid "draft"
+msgstr "нацрт"
+
+#: .\models.py
+msgid "title"
+msgstr "наслов"
+
+#: .\models.py
+msgid "summary"
+msgstr "сажетак"
+
+#: .\models.py
+msgid "The summary of the article (max. 500 characters)"
+msgstr "Сажетак чланка (макс. 500 карактера)"
+
+#: .\models.py
+msgid "body"
+msgstr "тело чланка"
+
+#: .\models.py
+msgid "The body/contents of the article"
+msgstr "Тело/садржај/текст чланка"
+
+#: .\models.py
+msgid "author(s)"
+msgstr "аутор(и)"
+
+#: .\models.py
+msgid "article publication status"
+msgstr "статус објављивања чланка"
+
+#: .\models.py
+msgid "date created"
+msgstr "датум објављивања"
+
+#: .\models.py
+msgid "date updated"
+msgstr "датум последње измене"
+
+#: .\models.py
+msgid "article"
+msgstr "чланак"
+
+#: .\models.py
+msgid "articles"
+msgstr "чланци"
+
+#: .\templates\blog\article_details.html .\templates\blog\article_list.html
+msgid "Date of publication:"
+msgstr "Датум објављивања:"
+
+#: .\templates\blog\article_details.html .\templates\blog\article_list.html
+#: .\templates\blog\user_details.html
+msgid "Author:"
+msgid_plural "Authors:"
+msgstr[0] "Аутор:"
+msgstr[1] "Аутори:"
+msgstr[2] "Аутори:"
+
+#: .\templates\blog\article_details.html
+msgid "Last update:"
+msgstr "Последња измена:"
+
+#: .\templates\blog\user_details.html
+#, python-format
+msgid "Articles written by %(user)s"
+msgstr "Чланци које је написао/ла %(user)s"
+
+#~ msgid "Created on"
+#~ msgstr "Датум објављивања:"
+
+#~ msgid "DaniMundo"
+#~ msgstr "ДаниМундо"
+
+#~ msgid "Home"
+#~ msgstr "Почетна"
+
+#~ msgid "Welcome!"
+#~ msgstr "Добро ми дошли!"
+
+#~ msgid ""
+#~ "\n"
+#~ "Hey, nice to see you! :grinning:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Здраво, сјајно је видети те! :grinning:\n"
